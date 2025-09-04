@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   StyleSheet,
   View,
@@ -42,6 +43,7 @@ export default function App() {
               style={styles.input}
               activeOutlineColor="red"
               theme={{ roundness: 12 }}
+              left={<TextInput.Icon icon="email" color="red" />}
             />
 
             <TextInput
@@ -51,6 +53,7 @@ export default function App() {
               style={styles.input}
               activeOutlineColor="red"
               theme={{ roundness: 12 }}
+              left={<TextInput.Icon icon="lock" color="red" />}
             />
 
             <TouchableOpacity style={styles.button} onPress={handleLogin}>
